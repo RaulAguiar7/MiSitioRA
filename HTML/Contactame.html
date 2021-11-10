@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel= "stylesheet" href="C:\Users\asus\Desktop\1º DAMB\LND\AE1\estilo.css"/>
+     <head>
+        <link rel=icon href="file:///C:/Users/asus/Downloads/favicon-96x96.png" type= "image/png"/>
+     </head>
+     <body>
+      <div id="header">
+     <ul> 
+      <li><a href="Index.html.html">Tim Berners-Lee</a></li>
+      <li><a href="Porfolio.html">Porfolio</a></li>
+      <li><a href="Precios.html">Tabla de precios</a></li>
+      <li><a href="Contactame.html">Contactame</a></li>
+     </ul>
+     <img src="C:\Users\asus\Downloads\imagen-menu.png" usemap="#mapan">
+      <map name="mapan">
+        <area shape="rect" coords="16,44, 107,130" href="Index.html.html"/>
+        <area shape="circle" coords="172,88,48" href="Porfolio.html"/>
+        <area shape="poly" coords="288,42,233,144,343,145" href="Precios.html"/>
+        <area shape="rect" coords="353,33,439,139" href="Contactame.html"/>
+      </map>
+      </div>
+      <div id="main-content"> 
+          <h1>
+            Contactame
+          </h1>
+          <h2>
+              Formulario de contacto
+          </h2>
+          <form action="contactar.php" method="post">
+          <fieldset>
+          <legend>Datos personales</legend>
+          Nombre:
+            <input type="text" name="nombre" value="" placeholder="Introduzca nombre" required />
+            <br/>
+            Apellidos:
+            <input type="text" name="apellidos" value="" placeholder="Introduzca apellidos" required/>
+            <br/>
+            Email
+            <input type="email" name="correo" value="" required="@" />
+            <br/>
+            Fecha de nacimiento:
+            <input type="date" name="fecha" value="" />
+            <br/>
+            Edad
+            <input type="number" name="edad" value="" required/>
+            <br/>
+            Sexo: 
+            <input type="radio" name="sexo" value="Hombre" />Hombre
+            <input type="radio" name="sexo" value="Mujer" />Mujer
+            <br/>
+            Pais
+            <label name= "pais" for="pais">
+            <select id="pais" name="seleciona">
+            <option value="" selected="selected">- selecciona -</option>
+            <option value="esp">Espana</option>
+            <option value="fra">Francia</option>
+            <option value="ger">Alemania</option>
+            <option value="ita">Italia</option>
+            <option value="ing">Inglaterra</option>
+            </select>
+          </label>
+        </fieldset>
+         </br>
+        <fieldset>
+          <legend>Otros datos</legend>
+          Mensaje:
+          <input type="text" name="mensaje" value="" placeholder="Introduce tu mensaje"/>
+            </br>
+            Introduzca una foto...
+            <input type="file" value="" />
+            </br>
+          </fieldset>
+          <input type="checkbox" value=""/> He leido las condiciones...
+          </br>
+          <input type="reset" value="Limpiar"/>
+          <input type="submit" value="enviar"/>
+      </form>
+      </div>
+      <div id="side-content"> 
+      <h1>
+        Centro de referencia
+      </h1> 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5359.406585584607!2d-16.30424871394891!3d28.42643662029945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cd2a4473ebfb%3A0x92a4d4d0eec1e039!2sCentro%20Comercial%20A%C3%B1aza%20Carrefour!5e0!3m2!1ses!2ses!4v1636480214098!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <br>
+      <div id="footer">
+        © <b>2040</b> <a href="Index.html.html">www.MiSitioRA.com</a>
+       </div>
+       <br> 
+    </body>
+    </html>
